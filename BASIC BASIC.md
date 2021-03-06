@@ -48,7 +48,17 @@
 19. `.` represent present working directory
 20. `..` represent one directory back
 21. above two folders are present in every directory as hidden directories.
-22. 
+22. ./script.sh - It is actually a script located in the current working directory, as . represent present working directory.
+23. >> - append the output to a file.
+24. > - overrite the output to a file.
+25. ls abcd > output.txt  2 > error.txt
+    - above command redirects the output to output.txt , whereas if there is an error it writes the error to error.txt.
+    - every command has three inputs. 0 - stdin, 1- stdoutput , 2 -stderror.
+    - 2 is mandatory to write in case we want to see error.
+26. If we want to run a command from the script format is $(command)
+    - for example echo $(whoami)
+
+
 
 
 
