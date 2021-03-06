@@ -57,6 +57,18 @@
     - 2 is mandatory to write in case we want to see error.
 26. If we want to run a command from the script format is $(command)
     - for example echo $(whoami)
+27. cat > script.sh
+    - Now whatever we write on the console will be written into script file
+    - we can press ctrl+D to end the input.
+28. seq 1 10
+    - to print number from 1 to 10
+29. numbers = `seq 1 10`
+    - echo $numbers
+
+30. echo "2+3" | bc
+    - It forwards the output of echo command to bc
+
+31. Numbers pending
 
 
 
