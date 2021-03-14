@@ -2,4 +2,4 @@
 
 * [Home](/)
 * [Guide](guide.md)
-* [Abcd](Abcd.md)
+* [React Notes](ReactNotes)
