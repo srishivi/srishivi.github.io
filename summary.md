@@ -1,5 +1,5 @@
 <!-- docs/_sidebar.md -->
 
 * [Home](/)
-* [Guide](guide.md)
+* [Bash Notes](Bash)
 * [React Notes](ReactNotes)
