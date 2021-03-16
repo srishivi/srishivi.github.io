@@ -33,4 +33,13 @@
              } 
          }
         }
-   
+11. <b> State : </b> State is a data that a component maintains. Props can not be changed by the component which is receiving the props whereas the state can be changed. 
+   - State can be maintained only by the class component. States are mutable wheras props are not.
+   - The initialization of the states are done in constructor of the class (which is extending React.Component).
+   - Props are the only way to pass data between compoents.
+   - When we change the date through setState method, all the components accessing that state gets updated automatically. 
+   - this.state = {isLoggedIn = "false" , todoList = ""} . In this way values are assigned to state property.
+12. Function call on the click of button can be done as <button onClick = {this.callTheMethod} >Click me </button>.
+13. setState method can be called in two ways. One way is to this.setState({count : 1}) . New version of state is passed as json in the parameter.
+    Another way is to create an inline method inside setState. this.setState(prevState = > { return count : prevState.count+1 })
+15. Whichever method calls setState method should be bound with the context of the class in the constructor. eg., this.handleClick = this.handleClick.bind(this).
