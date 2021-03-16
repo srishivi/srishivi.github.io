@@ -17,4 +17,18 @@
    - <h3 style ={{display: !props.question && "none"}} Question : {props.question} </h3>
    - if the props.question is not available then value will not be printed.
 9. Refer functional programming in js to know about map, filter, reduce etc methods. These functions operate on an array.
-    - `    const productData = ProductData.map(ProductData => <Product key={ProductData.id} product={ProductData}/>) ` .
+    - `    const productData = ProductData.map(ProductData => <Product key={ProductData.id} product={ProductData}/>) ` 
+10. Components can be functional components or class based components.
+    - Functional component
+      func(){
+      return (
+         <div> 
+         </div>
+      ) 
+      }
+    - Class Component
+       class App extends React.component {
+         render() {
+         return {} 
+         }}
+   
