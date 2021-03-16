@@ -29,6 +29,8 @@
     - Class Component
        class App extends React.component {
          render() {
-         return {} 
-         }}
+         return {
+             } 
+         }
+        }
    
