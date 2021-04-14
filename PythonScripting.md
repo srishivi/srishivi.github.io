@@ -26,6 +26,8 @@
     print str * 2      # Prints string two times
     print str + "TEST" # Prints concatenated string```
     
+    - Raw Strings : print r'\n' prints \n and print R'\n'prints \n
+    
   - Python Lists
     - Python Lists are like arrays in java. However the difference is lists can hold data of different data types.
     - A list contains items separated by commas and enclosed within square brackets [].
@@ -134,4 +136,25 @@
           - Causes the loop to skip the remainder of its body and immediately retest its condition prior to reiterating.
         - pass statement
           - It is used when a statement is required syntactically but you do not want any command or code to execute.
+
+  - Python supports formatted strings.
+    ```#!/usr/bin/python
+
+      print "My name is %s and weight is %d kg!" % ('Zara', 21)```
+      
+  - Triple Quotes
+    - Python's triple quotes comes to the rescue by allowing strings to span multiple lines, including verbatim NEWLINEs, TABs, and any other special characters.
+    - The syntax for triple quotes consists of three consecutive single or double quotes.
+    - ```#!/usr/bin/python
+
+        para_str = """this is a long string that is made up of
+        several lines and non-printable characters such as
+        TAB ( \t ) and they will show up that way when displayed.
+        NEWLINEs within the string, whether explicitly given like
+        this within the brackets [ \n ], or just a NEWLINE within
+        the variable assignment will also show up.
+        """
+        print para_str```
+        
+    - 
         
