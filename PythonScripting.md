@@ -97,4 +97,41 @@
         x in y, here in results in a 1 if x is a member of sequence y.
       - Python identity operator :
         - Evaluates to true if the variables on either side of the operator point to the same object and false otherwise.
+
+  - Loops
+    - While loop
+    - For loop
+    - Nested loop
+
+   - While loop
+     - A while loop statement in Python programming language repeatedly executes a target statement as long as a given condition is true.
+     - If the else statement is used with a while loop, the else statement is executed when the condition becomes false.
+     - ```#!/usr/bin/python
+
+          count = 0
+          while count < 5:
+             print count, " is  less than 5"
+             count = count + 1
+          else:
+             print count, " is not less than 5" ```
+             
+     - For loop
+       - can be used to iterate over a loop or string.
+       - ``` #!/usr/bin/python
+
+          for letter in 'Python':     
+             print 'Current Letter :', letter
+       - If the else statement is used with a for loop, the else statement is executed when the loop has exhausted iterating the list.
+
+      - Loop control statements 
+        - Loop control statements change execution from its normal sequence.
+        - When execution leaves a scope, all automatic objects that were created in that scope are destroyed.
+        
+        - break statement
+          - the break statement brings you out of the loop.
+        - contine statement
+          - continue statement sends the flow to the check condition statement of the loop.
+          - Causes the loop to skip the remainder of its body and immediately retest its condition prior to reiterating.
+        - pass statement
+          - It is used when a statement is required syntactically but you do not want any command or code to execute.
         
