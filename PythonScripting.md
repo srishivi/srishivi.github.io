@@ -30,7 +30,7 @@
     - Python Lists are like arrays in java. However the difference is lists can hold data of different data types.
     - A list contains items separated by commas and enclosed within square brackets [].
     - ```list = [ 'abcd', 786 , 2.23, 'john', 70.2 ]
-             tinylist = [123, 'john']
+         tinylist = [123, 'john']
 
         print list          # Prints complete list
         print list[0]       # Prints first element of the list
@@ -80,3 +80,21 @@
         {'dept': 'sales', 'code': 6734, 'name': 'john'}
         ['dept', 'code', 'name']
         ['sales', 6734, 'john']```
+       
+      - Dictionaries have no concept of order among elements. It is incorrect to say that the elements are "out of order"; they are simply unordered.
+  
+  - Data type conversion can be simply done as str(x)
+    where x is to be converted to String format.
+    
+  - Operations
+    - Floor devision // is the division in which the result after division is rounded off. Only the integer value is kept
+    - 7//4 = 1
+    - but if one of the operand is negative, values are rounded off towards negative infinity
+    - -7//4 = -2
+    - Python membership operator :
+      - Python’s membership operators test for membership in a sequence, such as strings, lists, or tuples. 
+      - Evaluates to true if it finds a variable in the specified sequence and false otherwise.
+        x in y, here in results in a 1 if x is a member of sequence y.
+      - Python identity operator :
+        - Evaluates to true if the variables on either side of the operator point to the same object and false otherwise.
+        
