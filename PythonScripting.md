@@ -17,19 +17,19 @@
  
  - Printing String and Sub Strings
    
-    str = 'Hello World!'
+    ```str = 'Hello World!'
 
     print str          # Prints complete string
     print str[0]       # Prints first character of the string
     print str[2:5]     # Prints characters starting from 3rd to 5th
     print str[2:]      # Prints string starting from 3rd character
     print str * 2      # Prints string two times
-    print str + "TEST" # Prints concatenated string
+    print str + "TEST" # Prints concatenated string```
     
   - Python Lists
     - Python Lists are like arrays in java. However the difference is lists can hold data of different data types.
     - A list contains items separated by commas and enclosed within square brackets [].
-    - list = [ 'abcd', 786 , 2.23, 'john', 70.2 ]
+    - ```list = [ 'abcd', 786 , 2.23, 'john', 70.2 ]
              tinylist = [123, 'john']
 
         print list          # Prints complete list
@@ -37,7 +37,7 @@
         print list[1:3]     # Prints elements starting from 2nd till 3rd # [786 , 2.23]
         print list[2:]      # Prints elements starting from 3rd element
         print tinylist * 2  # Prints list two times
-        print list + tinylist # Prints concatenated lists
+        print list + tinylist # Prints concatenated lists```
         
   - Python Tuples
     - A tuple is another sequence data type that is similar to the list. 
@@ -46,12 +46,12 @@
     - The main differences between lists and tuples are: Lists are enclosed in brackets ( [ ] ) and their elements and size can be changed, while tuples are             enclosed in parentheses ( ( ) ) and cannot be updated.   
     - Tuples can be thought of as read-only lists.  
     - The following code is invalid with tuple, because we attempted to update a tuple, which is not allowed.   
-      #!/usr/bin/python
+      ```#!/usr/bin/python
 
       tuple = ( 'abcd', 786 , 2.23, 'john', 70.2  )
       list = [ 'abcd', 786 , 2.23, 'john', 70.2  ]
       tuple[2] = 1000    # Invalid syntax with tuple
-      list[2] = 1000     # Valid syntax with list
+      list[2] = 1000     # Valid syntax with list```
       
   - Python Dictionary
     - Python's dictionaries are kind of hash table type.
