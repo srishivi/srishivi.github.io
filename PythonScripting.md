@@ -63,25 +63,25 @@
     - Dictionaries are enclosed by curly braces {} and values can be assigned and accessed using square braces [].
     -  ```#!/usr/bin/python
 
-        dict = {}
-        dict['one'] = "This is one"
-        dict[2]     = "This is two"
+            dict = {}
+            dict['one'] = "This is one"
+            dict[2]     = "This is two"
 
-        tinydict = {'name': 'john','code':6734, 'dept': 'sales'}
+            tinydict = {'name': 'john','code':6734, 'dept': 'sales'}
 
 
-        print dict['one']       # Prints value for 'one' key
-        print dict[2]           # Prints value for 2 key
-        print tinydict          # Prints complete dictionary
-        print tinydict.keys()   # Prints all the keys
-        print tinydict.values() # Prints all the values
-        This produce the following result −
+            print dict['one']       # Prints value for 'one' key
+            print dict[2]           # Prints value for 2 key
+            print tinydict          # Prints complete dictionary
+            print tinydict.keys()   # Prints all the keys
+            print tinydict.values() # Prints all the values
+            This produce the following result −
 
-        This is one
-        This is two
-        {'dept': 'sales', 'code': 6734, 'name': 'john'}
-        ['dept', 'code', 'name']
-        ['sales', 6734, 'john']```
+            This is one
+            This is two
+            {'dept': 'sales', 'code': 6734, 'name': 'john'}
+            ['dept', 'code', 'name']
+            ['sales', 6734, 'john']```
        
       - Dictionaries have no concept of order among elements. It is incorrect to say that the elements are "out of order"; they are simply unordered.
   
@@ -110,12 +110,12 @@
      - If the else statement is used with a while loop, the else statement is executed when the condition becomes false.
      - ```#!/usr/bin/python
 
-          count = 0
-          while count < 5:
-             print count, " is  less than 5"
-             count = count + 1
-          else:
-             print count, " is not less than 5" ```
+            count = 0
+            while count < 5:
+               print count, " is  less than 5"
+               count = count + 1
+            else:
+               print count, " is not less than 5" ```
              
      - For loop
        - can be used to iterate over a loop or string.
@@ -164,40 +164,55 @@
      
      - <h1> Functions </h1>
          - functions in python are pass by reference.
-         - ```#!/usr/bin/python
+         - 
+            
+                 
+                  # Function definition is here
+                  def changeme( mylist ):
+                     "This changes a passed list into this function"
+                     mylist.append([1,2,3,4]);
+                     print "Values inside the function: ", mylist
+                     return
 
-            # Function definition is here
-            def changeme( mylist ):
-               "This changes a passed list into this function"
-               mylist.append([1,2,3,4]);
-               print "Values inside the function: ", mylist
-               return
+                  # Now you can call changeme function
+                  mylist = [10,20,30];
+                  changeme( mylist );
+                  print "Values outside the function: ", mylist
 
-            # Now you can call changeme function
-            mylist = [10,20,30];
-            changeme( mylist );
-            print "Values outside the function: ", mylist
-
-            # Here, we are maintaining reference of the passed object and appending values in the same object. So, this would produce the following result −
-            Values inside the function:  [10, 20, 30, [1, 2, 3, 4]]
-            Values outside the function:  [10, 20, 30, [1, 2, 3, 4]] ```
+                  # Here, we are maintaining reference of the passed object and appending values in the same object. So, this would produce the following result −
+                  Values inside the function:  [10, 20, 30, [1, 2, 3, 4]]
+                  Values outside the function:  [10, 20, 30, [1, 2, 3, 4]] ```
           
-         - ``` #!/usr/bin/python
+        - When passed value is not altered.
+               
+                  ``` #!/usr/bin/python
+                  # Function definition is here
+                  def changeme( mylist ):
+                     "This changes a passed list into this function"
+                     mylist = [1,2,3,4]; # This would assig new reference in mylist
+                     print "Values inside the function: ", mylist
+                     return
 
-            # Function definition is here
-            def changeme( mylist ):
-               "This changes a passed list into this function"
-               mylist = [1,2,3,4]; # This would assig new reference in mylist
-               print "Values inside the function: ", mylist
-               return
-
-            # Now you can call changeme function
-            mylist = [10,20,30];
-            changeme( mylist );
-            print "Values outside the function: ", mylist ```
+                  # Now you can call changeme function
+                  mylist = [10,20,30];
+                  changeme( mylist );
+                  print "Values outside the function: ", mylist ```
           
           
-          - The parameter mylist is local to the function changeme. Changing mylist within the function does not affect mylist. The function accomplishes nothing             and finally this would produce the following result −
+    -  The parameter mylist is local to the function changeme. Changing mylist within the function does not affect mylist. The function accomplishes nothing             and finally this would produce the following result −
           - Values inside the function:  [1, 2, 3, 4]
             Values outside the function:  [10, 20, 30]
+            
+     - <h2> Function arguments </h2>
+          - You can call a function by using the following types of formal arguments −
+
+            - Required arguments : Regular functions
+            - Keyword arguments : here arguments can be passed with the variable name while calling the functions.
+            - Default arguments : here default arguments are provided in the function definition. Also parameter are passed with the key name.
+            - Variable-length arguments. : def fun (var1 , * var2) ; All the extra variable passed is assigned to the tuple.
+            
+      - <h2> Anonymous Functions 
+        - These functions are called anonymous because they are not declared in the standard manner by using the def keyword. 
+        - You can use the lambda keyword to create small anonymous functions.
+        - An anonymous function cannot be a direct call to print because lambda requires an expression.
         
