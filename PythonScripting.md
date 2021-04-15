@@ -211,7 +211,7 @@
             - Default arguments : here default arguments are provided in the function definition. Also parameter are passed with the key name.
             - Variable-length arguments. : def fun (var1 , * var2) ; All the extra variable passed is assigned to the tuple.
             
-      - <h2> Anonymous Functions 
+      - <h2> Anonymous Functions </h2>
         - These functions are called anonymous because they are not declared in the standard manner by using the def keyword. 
         - You can use the lambda keyword to create small anonymous functions.
         - An anonymous function cannot be a direct call to print because lambda requires an expression.
