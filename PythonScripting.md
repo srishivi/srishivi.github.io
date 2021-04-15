@@ -162,39 +162,40 @@
       - To get formatted time in String format.
         - time.asctime(time.localtime(time.time()))
      
-     - Functions
-       - functions in python are pass by reference.
-       - ```#!/usr/bin/python
+     - <h1> Functions </h1>
+         - functions in python are pass by reference.
+         - ```#!/usr/bin/python
 
-          # Function definition is here
-          def changeme( mylist ):
-             "This changes a passed list into this function"
-             mylist.append([1,2,3,4]);
-             print "Values inside the function: ", mylist
-             return
+            # Function definition is here
+            def changeme( mylist ):
+               "This changes a passed list into this function"
+               mylist.append([1,2,3,4]);
+               print "Values inside the function: ", mylist
+               return
 
-          # Now you can call changeme function
-          mylist = [10,20,30];
-          changeme( mylist );
-          print "Values outside the function: ", mylist
+            # Now you can call changeme function
+            mylist = [10,20,30];
+            changeme( mylist );
+            print "Values outside the function: ", mylist
+
+            # Here, we are maintaining reference of the passed object and appending values in the same object. So, this would produce the following result −
+            Values inside the function:  [10, 20, 30, [1, 2, 3, 4]]
+            Values outside the function:  [10, 20, 30, [1, 2, 3, 4]] ```
           
-          # Here, we are maintaining reference of the passed object and appending values in the same object. So, this would produce the following result −
-          Values inside the function:  [10, 20, 30, [1, 2, 3, 4]]
-          Values outside the function:  [10, 20, 30, [1, 2, 3, 4]]
+         - ``` #!/usr/bin/python
+
+            # Function definition is here
+            def changeme( mylist ):
+               "This changes a passed list into this function"
+               mylist = [1,2,3,4]; # This would assig new reference in mylist
+               print "Values inside the function: ", mylist
+               return
+
+            # Now you can call changeme function
+            mylist = [10,20,30];
+            changeme( mylist );
+            print "Values outside the function: ", mylist ```
           
-        - ``` #!/usr/bin/python
-
-          # Function definition is here
-          def changeme( mylist ):
-             "This changes a passed list into this function"
-             mylist = [1,2,3,4]; # This would assig new reference in mylist
-             print "Values inside the function: ", mylist
-             return
-
-          # Now you can call changeme function
-          mylist = [10,20,30];
-          changeme( mylist );
-          print "Values outside the function: ", mylist ```
           
           - The parameter mylist is local to the function changeme. Changing mylist within the function does not affect mylist. The function accomplishes nothing             and finally this would produce the following result −
           - Values inside the function:  [1, 2, 3, 4]
