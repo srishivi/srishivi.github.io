@@ -1,3 +1,1 @@
-# Hi This is a new file
-
-sasasa
+This repository is for saving notes when studying anything.
