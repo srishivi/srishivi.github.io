@@ -3,4 +3,4 @@
 * [Home](README.md)
 * [Bash Notes](Bash.md)
 * [React Notes](ReactNotes.md)
-* [Python Notes](PythonScripting.md)
+* [Python Notes](PythonBasics.md)
