@@ -10,3 +10,6 @@ https://www.educative.io/blog/python-interview-questions?aid=5082902844932096&ut
 <h2> Flask </h2>
 https://soshace.com/how-to-create-a-personal-blogging-website-part-1/
 
+<h2> Date time </h2>
+https://www.kite.com/python/docs/datetime
+
