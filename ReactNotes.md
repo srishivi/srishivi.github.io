@@ -1,3 +1,5 @@
+https://www.youtube.com/watch?v=DLX62G4lc44&t=17274s
+
 <h1> React JS </h1>
 
 1. Node module package contains all the dependencies to be used in react project like react and react Dom.
@@ -43,3 +45,4 @@
 13. setState method can be called in two ways. One way is to this.setState({count : 1}) . New version of state is passed as json in the parameter.
     Another way is to create an inline method inside setState. this.setState(prevState = > { return count : prevState.count+1 })
 15. Whichever method calls setState method should be bound with the context of the class in the constructor. eg., this.handleClick = this.handleClick.bind(this).
+
