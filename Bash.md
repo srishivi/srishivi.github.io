@@ -66,9 +66,21 @@
     - echo $numbers
 
 30. echo "2+3" | bc
-    - It forwards the output of echo command to bc
+    - It forwards the output of echo command to bc (basic calculator)
 
-31. Numbers pending
+31. Reading the particular line from a file (15th line)
+     - cat filename.txt | head -n 15 | tail -n 1
+     - sed -n 15p filename.txt
+32. Reading delimited file 
+     - cat filename.txt | cut -d"|" -f4 
+        This will read 4th column
+     - cat filename.txt | cut -d"|" -f2-
+        This will read all the columns from 2 till last.
+33. Replacing characters through sed
+      - sed 's/11th/12th/g' filename.txt
+        This will replace all the occurences in a file.
+      - sed 's/11th/12th' filename.txt
+        This will replace the first occurence in a file.
 
 
 
